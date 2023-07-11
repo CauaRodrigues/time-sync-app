@@ -1,0 +1,85 @@
+@import "./utils/reset";
+
+main {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.digit-group {
+  width: 120px;
+  height: 200px;
+  margin: 0 8px;
+  position: relative;
+
+  .segment {
+    background-color: #aed9f1;
+    border-radius: 20px;
+    position: absolute;
+
+    &.off {
+      opacity: 0.1;
+    }
+
+    &:nth-child(1) {
+      height: 10px;
+
+      top: 10px;
+      left: 20px;
+      right: 20px;
+    }
+
+    &:nth-child(2) {
+      width: 10px;
+      height: calc(50% - 25px);
+      top: 20px;
+      right: 10px;
+    }
+
+    &:nth-child(3) {
+      width: 10px;
+      height: calc(50% - 25px);
+      bottom: 20px;
+      right: 10px;
+    }
+
+    &:nth-child(4) {
+      height: 10px;
+      bottom: 10px;
+      left: 20px;
+      right: 20px;
+    }
+
+    &:nth-child(5) {
+      width: 10px;
+      height: calc(50% - 25px);
+      bottom: 20px;
+      left: 10px;
+    }
+
+    &:nth-child(6) {
+      width: 10px;
+      height: calc(50% - 25px);
+      top: 20px;
+      left: 10px;
+    }
+
+    &:nth-child(7) {
+      height: 10px;
+      bottom: calc(50% - 5px);
+      left: 20px;
+      right: 20px;
+    }
+  }
+}
+
+.pointer {
+  width: 16px;
+  height: 16px;
+  margin: 0 10px;
+  background-color: #aed9f1;
+  border-radius: 50%;
+}

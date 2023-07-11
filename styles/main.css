@@ -1,0 +1,103 @@
+*,
+*::after,
+*::before,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  font-family: "Nunito", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
+}
+
+body,
+html {
+  background-color: #151515;
+  color: #e1e1e1;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.digit-group {
+  width: 120px;
+  height: 200px;
+  margin: 0 8px;
+  position: relative;
+}
+.digit-group .segment {
+  background-color: #aed9f1;
+  border-radius: 20px;
+  position: absolute;
+}
+.digit-group .segment.off {
+  opacity: 0.1;
+}
+.digit-group .segment:nth-child(1) {
+  height: 10px;
+  top: 10px;
+  left: 20px;
+  right: 20px;
+}
+.digit-group .segment:nth-child(2) {
+  width: 10px;
+  height: calc(50% - 25px);
+  top: 20px;
+  right: 10px;
+}
+.digit-group .segment:nth-child(3) {
+  width: 10px;
+  height: calc(50% - 25px);
+  bottom: 20px;
+  right: 10px;
+}
+.digit-group .segment:nth-child(4) {
+  height: 10px;
+  bottom: 10px;
+  left: 20px;
+  right: 20px;
+}
+.digit-group .segment:nth-child(5) {
+  width: 10px;
+  height: calc(50% - 25px);
+  bottom: 20px;
+  left: 10px;
+}
+.digit-group .segment:nth-child(6) {
+  width: 10px;
+  height: calc(50% - 25px);
+  top: 20px;
+  left: 10px;
+}
+.digit-group .segment:nth-child(7) {
+  height: 10px;
+  bottom: calc(50% - 5px);
+  left: 20px;
+  right: 20px;
+}
+
+.pointer {
+  width: 16px;
+  height: 16px;
+  margin: 0 10px;
+  background-color: #aed9f1;
+  border-radius: 50%;
+}/*# sourceMappingURL=main.css.map */
